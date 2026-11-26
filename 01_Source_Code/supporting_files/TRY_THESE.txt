@@ -1,0 +1,21 @@
+KShell demo - commands to type, one per line.
+Start the shell from this folder:   cd supporting_files && ../kshell
+
+  ls                          list files (external program)
+  cat sample.txt              print the file
+  grep CSE sample.txt         lines that contain CSE
+  grep -c ECE sample.txt      count ECE students
+  sort -k4 -n sample.txt      sort by marks (4th column)
+  head -3 sample.txt          first 3 lines
+  wc -l sample.txt            count lines
+  echo   hello     world      extra spaces are ignored
+  pwd                         built-in: show current folder
+  cd ..                       built-in: go up one folder
+  pwd
+  cd supporting_files
+  cd                          built-in: go to home folder
+  cd /no/such/folder          error: No such file or directory
+  abc                         error: command not found
+  exit                        leave the shell (Ctrl+D also works)
+
+Not supported in KShell: pipes (|), redirection (> <), background (&), quotes.
